@@ -32,6 +32,7 @@ $(document).ready(function () {
 // LEVEL 4
 	$('.see-photos').on('click', function (event) {
 		event.stopPropagation();
+		event.preventDefault();
 		$(this).closest('.tour').find('.photos').slideToggle();
 	});
 	$('.tour').on('click', function() {
