@@ -30,12 +30,7 @@ $(document).ready(function () {
 //	});
 
 // LEVEL 4
-	$('#tour').on('click', 'button', function () {
-		$('.photos').slideToggle();
+	$('#nights').on('keyup', function () {
 	});
-	function showPhotos() {
-		$(this).find('span').slideToggle();
-	}
-	$('.photos').on('mouseenter', 'li', showPhotos);
-	$('.photos').on('mouseleave', 'li', showPhotos);
+
 });
