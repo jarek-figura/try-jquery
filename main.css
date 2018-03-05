@@ -12,5 +12,10 @@
 }
 
 .per-night {
+	position: relative;
+	display: block;
+}
+
+.per-night {
 	opacity: 0;
 }
