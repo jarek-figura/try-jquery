@@ -1,8 +1,11 @@
-jQuery(document).ready(function () {
+$(document).ready(function () {
+// LEVEL 1
 //	$("h2");
 //	$("span").text("$100");
 //	$(".vacation h2").text("Gdansk, Poland"); // 1.11
 //	$("#vacations .america");                 // 1.13
+
+// LEVEL 3
 //	$("#tours > li");       // 2.4
 //	$(".asia, .sale");      // 2.5
 //	$("#tours li:first");   // 2.6
@@ -13,4 +16,9 @@ jQuery(document).ready(function () {
 //	$("#vacations li").last().prev();   // 2.12
 //	$("#tours .featured").parent();     // 2.13
 //	$("#tours").children("li");         // 2.14
+
+// LEVEL 3
+	var message = $("<span>Call 1-555-jquery-air to book this tour</span>");
+	$(".usa").append(message);
+	$("button").remove();
 });
