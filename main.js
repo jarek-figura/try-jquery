@@ -31,6 +31,6 @@ $(document).ready(function () {
 
 // LEVEL 4
 	$('#tour').on('click', 'button', function () {
-		$('.photos').slideDown();
+		$('.photos').slideToggle();
 	});
 });
