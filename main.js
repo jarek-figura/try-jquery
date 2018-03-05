@@ -30,7 +30,9 @@ $(document).ready(function () {
 //	});
 
 // LEVEL 4
-	$('#nights').on('keyup', function () {
+	$('#nights').on('keyup', function() {
+		var nights = $(this).val();
+		$('#nights-count').text(nights);
 	});
 
 });
