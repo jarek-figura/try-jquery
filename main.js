@@ -5,7 +5,7 @@ $(document).ready(function () {
 //	$(".vacation h2").text("Gdansk, Poland"); // 1.11
 //	$("#vacations .america");                 // 1.13
 
-// LEVEL 3
+// LEVEL 2
 //	$("#tours > li");       // 2.4
 //	$(".asia, .sale");      // 2.5
 //	$("#tours li:first");   // 2.6
@@ -18,15 +18,17 @@ $(document).ready(function () {
 //	$("#tours").children("li");         // 2.14
 
 // LEVEL 3
-	$(document).ready(function() {
-		$('#filters').on('click', '.on-sale', function () {
-			$('.highlight').removeClass('highlight');
-			$('.tour').filter('.on-sale').addClass('highlight');
-		});
-		$('#filters').on('click', '.featured', function() {
-			$('.highlight').removeClass('highlight');
-			$('.tour').filter('.featured').addClass('highlight');
-		});
-	});
+//	$(document).ready(function() {
+//		$('#filters').on('click', '.on-sale', function () {
+//			$('.highlight').removeClass('highlight');
+//			$('.tour').filter('.on-sale').addClass('highlight');
+//		});
+//		$('#filters').on('click', '.featured', function() {
+//			$('.highlight').removeClass('highlight');
+//			$('.tour').filter('.featured').addClass('highlight');
+//		});
+//	});
 
+// LEVEL 4
+	alert($('img').length);
 });

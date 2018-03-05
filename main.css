@@ -1,3 +1,7 @@
 .highlight {
 	background: #eee;
 }
+
+.ticket {
+	display: none;
+}
