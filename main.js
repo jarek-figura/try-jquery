@@ -31,8 +31,10 @@ $(document).ready(function () {
 
 // LEVEL 4
 	$('#nights').on('keyup', function() {
-		var nights = $(this).val();
+		var nights = +$(this).val();
+		var price = +$(this).closest('.tour').data('daily-price');
 		$('#nights-count').text(nights);
+		$('#total').text(nights * price);
 	});
 
 });
