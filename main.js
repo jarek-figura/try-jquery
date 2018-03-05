@@ -31,7 +31,7 @@ $(document).ready(function () {
 
 // LEVEL 4
 	$('.see-photos').on('click', function () {
-
+		$(this).closest('.tour').find('.photos').slideToggle();
 	});
 
 });
