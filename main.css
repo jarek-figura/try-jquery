@@ -5,3 +5,7 @@
 .photos, .photos span {
 	display: none;
 }
+
+.comments {
+	display: none;
+}
