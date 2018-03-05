@@ -30,11 +30,15 @@ $(document).ready(function () {
 //	});
 
 // LEVEL 4
-	$('#nights').on('keyup', function() {
-		var nights = +$(this).val();
+	var nights = $('#nights');
+	nights.on('keyup', function() {
+		var count = +$(this).val();
 		var price = +$(this).closest('.tour').data('daily-price');
-		$('#nights-count').text(nights);
-		$('#total').text(nights * price);
+		$('#nights-count').text(count);
+		$('#total').text(count * price);
+	});
+	nights.on('focus', function() {
+		$(this).val(7);
 	});
 
 });
