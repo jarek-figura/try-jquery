@@ -30,5 +30,6 @@ $(document).ready(function () {
 //	});
 
 // LEVEL 4
-	alert($('img').length);
+	$('#tour').on('click', 'button', function () {
+	});
 });
