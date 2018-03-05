@@ -34,5 +34,6 @@ $(document).ready(function () {
 		$('.photos').slideToggle();
 	});
 	$('.photos').on('mouseenter', 'li', function () {
+		$(this).find('span').slideToggle();
 	});
 });
