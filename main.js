@@ -40,9 +40,14 @@ $(document).ready(function () {
 //	});
 
 // LEVEL 5
-	$('.tour').on('mouseenter', function() {
-		$(this).css({'background-color': '#eee', 'font-weight': 'bold'});
+	var tour = $('.tour');
+	tour.on('mouseenter', function() {
+		$(this).addClass('highlight');
 		$(this).find('.photos').show();
+	});
+	tour.on('mouseleave', function() {
+		$(this).removeClass('highlight');
+		$(this).find('.photos').hide();
 	});
 
 });
