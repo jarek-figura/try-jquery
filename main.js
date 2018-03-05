@@ -18,10 +18,12 @@ $(document).ready(function () {
 //	$("#tours").children("li");         // 2.14
 
 // LEVEL 3
-	$("button").on("click", function () {
-		var message = $('<span>Call 1-555-jquery-air to book this tour</span>');
-		$(this).closest('.tour').append(message);
-		$(this).remove();
+	$(document).ready(function() {
+		$('.tour').on('click', function() {
+			var message = $('<span>Call 1-555-jquery-air to book this tour</span>');
+			$(this).append(message);
+			$(this).find('button').remove();
+		});
 	});
 
 });
