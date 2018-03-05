@@ -19,9 +19,13 @@ $(document).ready(function () {
 
 // LEVEL 3
 	$(document).ready(function() {
-		// Create the click handler here
 		$('#filters').on('click', '.on-sale', function () {
+			$('.highlight').removeClass('highlight');
 			$('.tour').filter('.on-sale').addClass('highlight');
+		});
+		$('#filters').on('click', '.featured', function() {
+			$('.highlight').removeClass('highlight');
+			$('.tour').filter('.featured').addClass('highlight');
 		});
 	});
 
