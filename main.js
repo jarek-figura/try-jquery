@@ -36,4 +36,7 @@ $(document).ready(function () {
 	$('.photos').on('mouseenter', 'li', function () {
 		$(this).find('span').slideToggle();
 	});
+	$('.photos').on('mouseleave', 'li', function() {
+		$(this).find('span').slideToggle();
+	});
 });
