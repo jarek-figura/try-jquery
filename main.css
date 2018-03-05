@@ -10,3 +10,7 @@
 .comments {
 	display: none;
 }
+
+.per-night {
+	opacity: 0;
+}
