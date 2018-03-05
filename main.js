@@ -30,13 +30,18 @@ $(document).ready(function () {
 //	});
 
 // LEVEL 4
-	$('.see-photos').on('click', function (event) {
-		event.stopPropagation();
-		event.preventDefault();
-		$(this).closest('.tour').find('.photos').slideToggle();
-	});
-	$('.tour').on('click', function() {
-		alert('This event handler should not be called.');
+//	$('.see-photos').on('click', function (event) {
+//		event.stopPropagation();
+//		event.preventDefault();
+//		$(this).closest('.tour').find('.photos').slideToggle();
+//	});
+//	$('.tour').on('click', function() {
+//		alert('This event handler should not be called.');
+//	});
+
+// LEVEL 5
+	$('.tour').on('mouseenter', function() {
+		$(this).css({'background-color': '#eee'});
 	});
 
 });
