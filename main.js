@@ -21,7 +21,7 @@ $(document).ready(function () {
 	$(document).ready(function() {
 		// Create the click handler here
 		$('#filters').on('click', '.on-sale', function () {
-
+			$('.tour').filter('.on-sale').addClass('highlight');
 		});
 	});
 
