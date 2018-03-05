@@ -33,10 +33,9 @@ $(document).ready(function () {
 	$('#tour').on('click', 'button', function () {
 		$('.photos').slideToggle();
 	});
-	$('.photos').on('mouseenter', 'li', function () {
+	function showPhotos() {
 		$(this).find('span').slideToggle();
-	});
-	$('.photos').on('mouseleave', 'li', function() {
-		$(this).find('span').slideToggle();
-	});
+	}
+	$('.photos').on('mouseenter', 'li', showPhotos);
+	$('.photos').on('mouseleave', 'li', showPhotos);
 });
